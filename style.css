@@ -1,0 +1,146 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+/* classes to build your layout */
+.column {
+	display: block;
+	height: 100%;
+	width: calc(100%/2);
+}
+.img{
+	filter: grayscale(100%);
+}
+.img-1{
+	filter: grayscale(0%);
+}
+.img-2{
+	filter: blur(5px);
+}
+.color{
+	background-color: green;
+}
+.one-half-row {
+	height: 50%;
+	width: 100%;
+	display: flex;
+}
+truck{
+	height: 100%;
+	width: 100%;
+}
+truck2{
+	height: 100%;
+	width: 100%;
+}
+.truck:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.one-half-row1 {
+	height: 50%;
+	width: 100%;
+	display: flex;
+}
+.one-third-row {
+	height: calc(100%/3);
+	width: 100%;
+	display: flex;
+}
+.box {
+	height: 100%;
+	width: 50%;
+	display: flex;
+}
+.band{
+	height: 100%;
+	width: 90%;
+}
+.band:hover{
+	background-color: #F608AC;
+	cursor: pointer;
+}
+.img:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+.img:active{
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+
+/* colors */
+.pink {background-color: #F608AC;}
+.navy {background-color: #001621;}
+.green {background-color: #748E5E;}
+.purple {background-color: #67475C;}
+.brown {background-color: #432C1C;}
+.light-grey {background-color: #D3D3D3;}
+.grey {background-color: #505050;}
+.dark-grey {background-color: #282828;}
+.black {background-color: #000000;}
+.white-smoke {background-color: #F5F5F5;}
+
+/* centering images */
+.center-content {
+	justify-content: center;
+	align-items: center;
+}
+.center-bottom {
+	justify-content: center;
+	align-items: flex-end;
+}
+.contain-image {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/* hover and active click styling effects */
+.pinkblur {
+	background-color: #F608AC;
+	filter:blur(5px);
+}
+.pinkblur:hover {
+
+}	
+.pinkblur:active {
+	
+}
+.opaque {
+	opacity: 0.5;
+}
+.yes-cursor {
+	cursor: pointer;
+}
+.no-cursor {
+	cursor: default;
+}
+.all-grey {
+	filter: grayscale(100%);
+}
+.shadow {
+	filter: drop-shadow(3px 4px 4px);
+}
+.button-effect { 
+    transform: scale(0.95, 0.95);
+}
+.display-none {
+	display: none;
+}
+
+/* media query to make your page responsive */
+@media screen and (max-width: 1000px) {
+	body {
+		height: 100%;
+		display: block;
+	}
+
+	.column {
+		height: 50%;
+		width: 100%;
+	}
+}	

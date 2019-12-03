@@ -1,0 +1,45 @@
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GORILLAZ</title>
+		<link href="images/gorilla_favicon.png" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+		<body>
+		<div class="column">
+			<div class="one-third-row center-content" id="gorillaz">
+				<img src="images/gorillaz_logo.png" class="contain-image"/>
+			</div>
+			<div class="one-third-row">
+				<div class="box black center-content">
+					<img src="images/murdoc.png" class="img" id="img1" onClick="changeImage1(this)"/>
+				</div>
+				<div class="box black center-content">
+					<img src="images/2d.png" class="img" id="img2" onClick="changeImage2()"/>
+				</div>
+			</div>
+			<div class="one-third-row">
+				<div class="box black center-content">
+					<img src="images/noodle.png" class="img" id="img3" onClick="changeImage3()"/>
+				</div>
+				<div class="box black center-content">
+					<img src="images/russel.png" class="img" id="img4" onClick="changeImage4()"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="one-half-row center-content">
+				<img src="images/band_truck.png" id="truck" class="truck" onClick="engineStart()"/>
+			</div>
+			<div class="one-half-row1 center-content">
+				<img src="images/band.png" class="contain-image band" id="band" onmousedown="mouseDown()" onmouseup="mouseUp()"/>
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+	
+</html>
